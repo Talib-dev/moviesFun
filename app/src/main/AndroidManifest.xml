@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.we.moviesfun">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.we.moviesfun.Activities.ui.shows.TestActivity">
+
+        </activity>
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.SplaceScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.we.moviesfun.Activities.ui.shows.TrendingTVShows" />
+        <activity android:name="com.we.moviesfun.Activities.ui.movies.TrendingMovies" />
+        <activity android:name="com.we.moviesfun.DetailPeople" />
+        <activity
+            android:name="com.we.moviesfun.home.HomeBottomNavigaton"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.shows.AiringToday"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.shows.OnTV"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.DetailShow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.shows.TopRatedTVshows"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.shows.PopularTVshows"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.movies.NowPlayingMovies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.movies.TopRatedMovies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.movies.UpcomingMovies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.Activities.ui.movies.PopularMovies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.we.moviesfun.DetailActivity"
+            android:label="Movie"
+            android:parentActivityName="com.we.moviesfun.Activities.ui.movies.PopularMovies"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.we.moviesfun.Activities.ui.movies.PopularMovies" />
+        </activity>
+    </application>
+
+</manifest>
