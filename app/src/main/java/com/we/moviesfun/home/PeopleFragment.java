@@ -51,6 +51,7 @@ public class PeopleFragment extends Fragment {
 
 
         peopleList = new ArrayList<>();
+
         adapter = new PeopleAdepter(getContext(), peopleList);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.
